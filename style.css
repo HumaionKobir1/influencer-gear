@@ -33,12 +33,16 @@ label.logo{
     text-transform: uppercase; 
     border-radius: 3px;
     padding: 7px 13px;
-    color: black;
+    color: #0A0826;
     text-decoration: none;   
 }
+.active{
+    color: #FFFFFF !important;
+}
 a.active,a:hover{
-    background: #1b9bff;
+    background:  #e25085;
     transition: .5s;
+    color: #ffff !important;
 }
 .checkbtn{
     font-size: 30px;
