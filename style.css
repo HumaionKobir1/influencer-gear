@@ -174,12 +174,102 @@ a.active,a:hover{
     color: #787885;
 }
 .see-more{
+    float: right;
     font-size: 16px;
     font-weight: 700;
-    text-align: end;
     margin-top: 50px;
     color: #E02C6D;
+    margin-top: 10px;
 }
+/* Contact Section Start  */
+.contact{
+    margin-top: 100px;
+}
+
+.contact-box {
+    display: flex;
+    gap: 30px;
+    margin: 55px 0 70px;
+  }
+  .contact-box .single-box {
+    flex: 1;
+    border-radius: 30px;
+    text-align: center;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0;
+    box-shadow: 0 0 12px #00000082;
+    padding: 30px 0;
+    color: #3a3a3a;
+    transition: 0.3s;
+    min-height: 200px;
+  }
+  .section-heading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .single-box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0 8px;
+  }
+  .single-box i {
+    font-size: 60px;
+  }
+  
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact-form form input,
+  textarea {
+    width: 100%;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    outline: none;
+  }
+  .contact-form form input:focus,
+  textarea:focus {
+    box-shadow: 0 0 10px #e02b6c;
+  }
+  .contact-form .btn {
+    padding: 16px 80px;
+    font-size: 18px;
+  }
+  .btn {
+    display: inline-block;
+    border: 3px solid  #e02b6c;
+    color: #ffffff;
+    padding: 15px 40px;
+    border-radius: 40px;
+    background:  #e02b6c;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .btn i {
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .btn:hover {
+    background: transparent;
+    color: #e02b6c;
+  }
+  
+  .btn:hover i {
+    padding-left: 20px;
+    opacity: 100%;
+    visibility: visible;
+  }
+  .single-box:hover {
+    background: #000000;
+    box-shadow: 0 0 7px 1px #e02b6c;
+    color: #e03b6c;
+  }
+
+
 
 /* featured-products section start */
 .featured-products{
@@ -335,6 +425,29 @@ a.active,a:hover{
 
     }
 
+    /* contact form style */
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .contact-box {
+        display: flex;
+        flex-direction: column;
+      }
+      .contact-form form input,
+    textarea {
+        width: 100%;
+        padding: 15px 0;
+        margin-bottom: 20px;
+        font-weight: 600;
+        outline: none;
+    }
+    .contact-form .btn{
+        margin-bottom: 100px;
+    }
+
+    /* Featured products section style */
     .featured-products{
         display: flex;
         flex-direction: column;
